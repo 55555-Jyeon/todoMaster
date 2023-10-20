@@ -1,2 +1,2 @@
 # todoMaster
-developing TodoKist
+developing TodoList
