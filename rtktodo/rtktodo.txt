@@ -1,0 +1,40 @@
+npm i msw
+npx msw init public
+
+
+    RTK (Redux Tool Kit)
+
+    기존의 redux보다 짧은 보일러 코드, 자체적인 미들웨어 지원을 통한 DX(Development eXperience) 향상
+    하지만, 혀전히 사용에 불편함이 있던 것이 크게 달라지지 않아 결국 사용하기 편리한 다양한 라이브러리들의 등장으로 빛을 보지 못함
+    그래도 기존에 redux를 사용하던 회사들이 RTK로 많이 마이그레이션/전환되었다.
+
+
+npm i -D prettier eslint eslint-plugin-prettier eslint-plugin-react
+npm i -D eslint-plugin-unused-imports husky
+
+    >> eslint-plugin-prettier           기존에 있는 eslint에 prettier 기능과 prettier 충돌 방지
+    >> eslint-plugin-react              eslint가 react 문법에 암ㅈ게 적용
+    >> eslint-plugin-unused-imports     사용하지 않는 import 자동 삭제
+
+
+* 위에 버전 관련 오류 발생, 아래 코드 순서대로 입력하기
+
+npm i -D @typescript-eslint/parser@latest
+npm i -D @typescript-eslint/eslint-plugin
+npm i -D eslint-plugin-unused-imports
+npm i -D husky
+
+
+    how to use husky
+
+1. npx husky install
+
+2. package.json  >> script 부분에 { "postinstall" : "husky install" } 추가하기
+    2번 부분은 다른 협업 개발자들이 husky를 사용할 수 있도록 도와줌
+
+3. commit / push 이전에 실행할 명령어 입력
+    >> npx husky add .husky/pre-commit "npm run format && npm run lint:fix" 
+
+
+
+npm i @reduxjs/toolkit
