@@ -1,0 +1,9 @@
+
+[ server ]
+server file 다운 >> .env 작성
+SQL server : ctrl + enter
+todoserver: npm i > npm start
+
+ [ axios ] 
+npm i axios
+
